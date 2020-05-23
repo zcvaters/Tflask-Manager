@@ -17,7 +17,7 @@ class Timr:
         z.start()
 
     def status(self):
-        print("Timer Complete")
+        print("Timer Done")
 
 if __name__ == "__main__":
     currTime = int(input())
