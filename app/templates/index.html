@@ -12,6 +12,12 @@
         }
     }
 </script>
+<script src="js/Timer.js">
+
+    var myTimer = new Timer();
+
+</script>
+
 
 
 {% block body %}
@@ -36,7 +42,7 @@
                 <a href="/update/{{task.id}}">Update</a>
                 <br>
                 <a>Timer: </a>
-                <input href="/timer/{{task.id}}" type="number" onkeydown="search(this)" />
+                <input href="/timer/{{task.id}}" type="number" onkeydown="timer.start(this)" />
             </td>
         </tr>
         {% endfor %}

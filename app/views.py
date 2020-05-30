@@ -32,7 +32,6 @@ def index():
 @app.route('/delete/<int:id>')
 def delete(id):
     task_to_delete = Todo.query.get_or_404(id)
-    t= Timr()
 
     try:
         db.session.delete(task_to_delete)
@@ -58,12 +57,3 @@ def update(id):
     else:
         return render_template('update.html', task=task)
 
-
-def timer():
-    task_timer = Todo.get_or_404(id)
-    t
-    try:
-        db.session.commit()
-        return redirect('/')
-    except:
-        return 'There was an issue updating the task'
