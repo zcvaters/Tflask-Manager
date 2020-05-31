@@ -1,12 +1,8 @@
 body, html {
     margin: 0;
     font-family: sans-serif;
+    text-align: center;
     
-}
-
-body {
-    background-image: url(/app/Assets/Untitled.png);
-    enable-background: isolation;
 }
 .content {
     margin: 0 auto;

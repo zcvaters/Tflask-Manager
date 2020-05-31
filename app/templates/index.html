@@ -3,23 +3,6 @@
 {% block head %}
 <title>Task Master</title>
 {% endblock %}
-
-
-<script>
-    function search(ele) {
-        if (event.key === 'Enter') {
-            alert(ele.value);
-        }
-    }
-</script>
-<script src="js/Timer.js">
-
-    var myTimer = new Timer();
-
-</script>
-
-
-
 {% block body %}
 <div class="content">
     <h1 style="text-align: center">Task Master</h1>
@@ -42,7 +25,7 @@
                 <a href="/update/{{task.id}}">Update</a>
                 <br>
                 <a>Timer: </a>
-                <input href="/timer/{{task.id}}" type="number" onkeydown="timer.start(this)" />
+
             </td>
         </tr>
         {% endfor %}
